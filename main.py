@@ -22,7 +22,16 @@ class TestTest():
     def teardown_method(self, method):
         self.driver.quit()
 
+    """
+    1. 配置 chrome 浏览器环境变量
+    2. 启动 chrome debugging 时所有浏览器必须关闭
+    3. cmd: Google\ Chrome -remote-debugging-port=9222
+    4. 启动浏览器后扫码登录
+    4. 执行用例并获取 cookies 
+    """
+
     def test_cookies(self):
+
         # sleep(20)
         # cookies = self.driver.get_cookies()
         # print(cookies)
