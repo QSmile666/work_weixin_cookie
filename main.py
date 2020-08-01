@@ -50,5 +50,4 @@ class TestTest():
         self.driver.find_element(By.CSS_SELECTOR, '#username').send_keys("hello")
         self.driver.find_element(By.CSS_SELECTOR, '#memberAdd_acctid').send_keys("hello2")
         sleep(3)
-
-        #hhhh
+        
